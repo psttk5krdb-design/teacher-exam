@@ -1,0 +1,51 @@
+
+const questionBank = [
+  {
+    category:"physics",
+    question:"แรงที่ทำให้วัตถุตกสู่พื้นโลกคือข้อใด",
+    options:["แรงแม่เหล็ก","แรงโน้มถ่วง","แรงไฟฟ้า","แรงเสียดทาน"],
+    answer:1
+  },
+  {
+    category:"physics",
+    question:"หน่วยของแรงคืออะไร",
+    options:["จูล","นิวตัน","วัตต์","โวลต์"],
+    answer:1
+  },
+  {
+    category:"chemistry",
+    question:"น้ำมีสูตรเคมีใด",
+    options:["CO2","H2O","NaCl","O2"],
+    answer:1
+  },
+  {
+    category:"chemistry",
+    question:"กรดมีค่า pH อย่างไร",
+    options:["มากกว่า 7","เท่ากับ 7","น้อยกว่า 7","ไม่มีค่า pH"],
+    answer:2
+  },
+  {
+    category:"biology",
+    question:"การสังเคราะห์ด้วยแสงเกิดที่ใด",
+    options:["ไมโทคอนเดรีย","นิวเคลียส","คลอโรพลาสต์","ไรโบโซม"],
+    answer:2
+  },
+  {
+    category:"biology",
+    question:"หน่วยพื้นฐานของสิ่งมีชีวิตคืออะไร",
+    options:["เซลล์","เนื้อเยื่อ","อวัยวะ","ระบบอวัยวะ"],
+    answer:0
+  },
+  {
+    category:"earth",
+    question:"ดาวเคราะห์ใดอยู่ใกล้ดวงอาทิตย์ที่สุด",
+    options:["โลก","ดาวอังคาร","ดาวพุธ","ดาวเสาร์"],
+    answer:2
+  },
+  {
+    category:"earth",
+    question:"โลกหมุนรอบตัวเองใช้เวลากี่ชั่วโมง",
+    options:["12","24","30","48"],
+    answer:1
+  }
+];

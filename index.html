@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mock Exam - ครูผู้ช่วย วิทยาศาสตร์ทั่วไป</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <div id="loginPage" class="card">
+    <h1>ระบบจำลองสอบครูผู้ช่วย</h1>
+    <h2>เอกวิทยาศาสตร์ทั่วไป</h2>
+
+    <input type="text" id="username" placeholder="กรอกชื่อผู้สอบ">
+    
+    <select id="category">
+      <option value="all">ทุกหมวด</option>
+      <option value="physics">ฟิสิกส์</option>
+      <option value="chemistry">เคมี</option>
+      <option value="biology">ชีววิทยา</option>
+      <option value="earth">โลกและอวกาศ</option>
+    </select>
+
+    <button onclick="startExam()">เริ่มสอบ</button>
+  </div>
+
+  <div id="examPage" class="hidden">
+    <div class="topbar">
+      <div id="studentInfo"></div>
+      <div id="timer">30:00</div>
+    </div>
+
+    <div class="card">
+      <div id="progress"></div>
+      <div id="questionBox"></div>
+
+      <div class="actions">
+        <button onclick="prevQuestion()">ย้อนกลับ</button>
+        <button onclick="nextQuestion()">ถัดไป</button>
+        <button onclick="submitExam()">ส่งข้อสอบ</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="resultPage" class="hidden card">
+    <h2>ผลสอบ</h2>
+    <p id="finalScore"></p>
+    <div id="analysis"></div>
+
+    <button onclick="restart()">ทำใหม่</button>
+  </div>
+
+</div>
+
+<script src="questions.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
